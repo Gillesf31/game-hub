@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Add gitignore for src/services/api-client.ts
+src/services/api-client.ts
