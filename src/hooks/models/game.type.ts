@@ -9,6 +9,7 @@ export type Game = {
   readonly name: string;
   readonly background_image: string;
   readonly parent_platforms: { platform: Platform }[];
+  readonly metacritic: number;
 };
 
 export type FetchGamesResponse = {
