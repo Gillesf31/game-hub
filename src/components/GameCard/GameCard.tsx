@@ -2,6 +2,7 @@ import {Game} from "../../hooks/models/game.type";
 import {Card, CardBody, Heading, HStack, Image} from "@chakra-ui/react";
 import PlatformIconList from "../PlatformIconList/PlatformIconList";
 import CriticScore from "../CriticScore/CriticScore";
+import getCroppedImageUrl from "../../services/image-url";
 
 interface GameCardProps {
     game: Game;
@@ -10,7 +11,7 @@ interface GameCardProps {
 const GameCard = ({game}: GameCardProps) => {
     return (
         <Card borderRadius={10} overflow='hidden'>
-            <Image src={game.background_image} alt={game.name} />
+            <Image src={getCroppedImageUrl(game.background_image)} alt={game.name} />
             <CardBody>
                 <Heading fontSize='2xl'>{game.name}</Heading>
                 <HStack justifyContent='space-between'>
