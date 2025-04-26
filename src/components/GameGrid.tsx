@@ -1,31 +1,12 @@
-import { Text } from '@chakra-ui/react';
-import { useEffect, useState } from 'react';
-import apiClient from '../services/api-client';
-
-type Game = {
-  id: number;
-  name: string;
-};
-
-type FetchGamesResponse = {
-  count: number;
-  results: Game[];
-};
+import { CircularProgress, Text } from '@chakra-ui/react';
+import useGames from '../hooks/useGames';
 
 const GameGrid = () => {
-  const [games, setGames] = useState<Game[]>([]);
-  const [error, setError] = useState('');
-
-  useEffect(() => {
-    apiClient
-      .get<FetchGamesResponse>('/games')
-      .then((res) => setGames(res.data.results))
-      .catch((err) => setError(err.message));
-  }, []);
-
+  const { games, error, isLoading } = useGames();
   return (
     <>
       {error && <Text>{error}</Text>}
+      {isLoading && <CircularProgress isIndeterminate />}
       <ul>
         {games.map((game) => (
           <li key={game.id}>{game.name}</li>
