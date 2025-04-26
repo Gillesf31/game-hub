@@ -1,4 +1,5 @@
-import { HStack, Icon, IconType } from '@chakra-ui/react';
+import { HStack, Icon } from '@chakra-ui/react';
+import { IconType } from 'react-icons';
 import {
   BsGlobe,
   FaAndroid,
