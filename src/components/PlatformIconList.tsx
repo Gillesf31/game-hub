@@ -11,7 +11,7 @@ import {
   MdPhone,
   SiNintendo,
 } from 'react-icons/all';
-import { Platform } from '../hooks/useGames';
+import { Platform } from '../hooks/usePlatforms';
 
 interface PlatformIconListProps {
   platforms: Platform[];
