@@ -16,9 +16,14 @@ type GameState = {
   setPlatformId: (platformId: number) => void;
 };
 
-const gameState = create<GameState>()(
+const useGameStore = create<GameState>()(
   devtools((set) => ({
-    gameQuery: {} as GameQuery,
+    gameQuery: {
+      genreId: undefined,
+      platformId: undefined,
+      sortOrder: '',
+      search: '',
+    },
     setSearchText: (searchText: string) =>
       set((state) => ({
         gameQuery: { ...state.gameQuery, search: searchText },
@@ -32,4 +37,4 @@ const gameState = create<GameState>()(
   }))
 );
 
-export default gameState;
+export default useGameStore;

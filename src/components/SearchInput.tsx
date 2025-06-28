@@ -1,11 +1,11 @@
 import { Input, InputGroup, InputLeftElement } from '@chakra-ui/react';
 import { useRef } from 'react';
 import { BsSearch } from 'react-icons/bs';
-import gameState from '../store';
+import useGameStore from '../store';
 
 const SearchInput = () => {
   const inputRef = useRef<HTMLInputElement>(null);
-  const setSearchText = gameState((s) => s.setSearchText);
+  const setSearchText = useGameStore((s) => s.setSearchText);
 
   return (
     <form
