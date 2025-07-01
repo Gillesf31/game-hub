@@ -28,6 +28,12 @@ class APIClient<T> {
       .get<T>(`${this.endpoint}/${slug}`)
       .then((res) => res.data);
   };
+
+  getGameTrailer = (slug: string) => {
+    return axiosInstance
+      .get<FetchResponse<T>>(`${this.endpoint}/${slug}/movies`)
+      .then((res) => res.data);
+  };
 }
 
 export default APIClient;
