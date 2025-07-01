@@ -1,4 +1,3 @@
-import { AspectRatio } from '@chakra-ui/react';
 import useGetGameTrailer from '../hooks/useGetGameTrailer';
 
 type GameTrailerProps = {
@@ -15,14 +14,12 @@ const GameTrailer = ({ slug }: GameTrailerProps) => {
   const firstTrailer = trailer?.results[0];
 
   return firstTrailer ? (
-    <AspectRatio maxW='560px'>
-      <video
-        key={firstTrailer.id}
-        src={firstTrailer.data['480']}
-        poster={firstTrailer.preview}
-        controls
-      />
-    </AspectRatio>
+    <video
+      key={firstTrailer.id}
+      src={firstTrailer.data['480']}
+      poster={firstTrailer.preview}
+      controls
+    />
   ) : null;
 };
 
