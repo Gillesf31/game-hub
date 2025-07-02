@@ -1,9 +1,5 @@
 import { createSystem, defaultConfig } from '@chakra-ui/react';
 
-// const config: ThemeConfig = {
-//   initialColorMode: 'dark',
-// };
-
 export const system = createSystem(defaultConfig, {
   theme: {
     tokens: {

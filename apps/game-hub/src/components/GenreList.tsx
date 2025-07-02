@@ -22,25 +22,25 @@ const GenreList = () => {
 
   return (
     <>
-      <Heading fontSize='2xl' marginBottom={3}>
+      <Heading fontSize="2xl" marginBottom={3}>
         Genres
       </Heading>
-      <List>
+      <List.Root>
         {genres?.results.map((genre) => (
           <ListItem key={genre.id} paddingY={1}>
             <HStack>
               <Image
                 src={getCroppedImageUrl(genre.image_background, 600, 400)}
-                boxSize='32px'
+                boxSize="32px"
                 borderRadius={8}
-                objectFit='cover'
+                objectFit="cover"
               />
               <Button
                 onClick={() => setSelectedGenreId(genre.id)}
-                fontSize='lg'
-                whiteSpace='normal'
-                textAlign='left'
-                variant='link'
+                fontSize="lg"
+                whiteSpace="normal"
+                textAlign="left"
+                variant="ghost"
                 fontWeight={selectedGenreId === genre.id ? 'bold' : 'normal'}
                 textDecoration={
                   selectedGenreId === genre.id ? 'underline' : 'none'
@@ -51,7 +51,7 @@ const GenreList = () => {
             </HStack>
           </ListItem>
         ))}
-      </List>
+      </List.Root>
     </>
   );
 };

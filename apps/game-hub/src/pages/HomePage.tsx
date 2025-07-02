@@ -1,4 +1,5 @@
-import { Box, Grid, GridItem, HStack, Show } from '@chakra-ui/react';
+import { Box, Grid, GridItem, HStack } from '@chakra-ui/react';
+import GameGrid from '../components/GameGrid';
 import GameHeading from '../components/GameHeading';
 import GenreList from '../components/GenreList';
 import PlatformSelector from '../components/PlatformSelector';
@@ -16,11 +17,9 @@ function HomePage() {
         lg: '200px 1fr',
       }}
     >
-      <Show above="lg">
-        <GridItem area="aside" paddingX={2}>
-          <GenreList />
-        </GridItem>
-      </Show>
+      <GridItem area="aside" paddingX={2}>
+        <GenreList />
+      </GridItem>
       <GridItem area="main">
         <Box paddingLeft={2}>
           <GameHeading />
@@ -29,7 +28,7 @@ function HomePage() {
             <SortSelector />
           </HStack>
         </Box>
-        {/* <GameGrid /> */}
+        <GameGrid />
       </GridItem>
     </Grid>
   );

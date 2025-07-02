@@ -19,7 +19,7 @@ const SearchInput = () => {
         }
       }}
     >
-      <Group>
+      <Group width={'100%'}>
         <BsSearch />
         <Input ref={inputRef} borderRadius={20} placeholder="Search games..." />
       </Group>
