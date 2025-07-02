@@ -4,7 +4,6 @@ import {
   HStack,
   Image,
   List,
-  ListItem,
   Spinner,
 } from '@chakra-ui/react';
 import useGenres from '../hooks/useGenres';
@@ -25,9 +24,9 @@ const GenreList = () => {
       <Heading fontSize="2xl" marginBottom={3}>
         Genres
       </Heading>
-      <List.Root>
+      <List.Root listStyleType={'none'}>
         {genres?.results.map((genre) => (
-          <ListItem key={genre.id} paddingY={1}>
+          <List.Item key={genre.id} paddingY={1}>
             <HStack>
               <Image
                 src={getCroppedImageUrl(genre.image_background, 600, 400)}
@@ -49,7 +48,7 @@ const GenreList = () => {
                 {genre.name}
               </Button>
             </HStack>
-          </ListItem>
+          </List.Item>
         ))}
       </List.Root>
     </>
