@@ -1,5 +1,4 @@
-import { Button, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react';
-import { BsChevronDown } from 'react-icons/bs';
+import { Button, Menu } from '@chakra-ui/react';
 import useGetPlatform from '../hooks/useGetPlatform';
 import usePlatforms from '../hooks/usePlatforms';
 import useGameStore from '../store';
@@ -14,21 +13,24 @@ const PlatformSelector = () => {
   if (error) return null;
 
   return (
-    <Menu>
-      <MenuButton as={Button} rightIcon={<BsChevronDown />}>
-        {selectedPlatform?.name || 'Platforms'}
-      </MenuButton>
-      <MenuList>
+    <Menu.Root positioning={{ placement: 'right-start' }}>
+      <Menu.Trigger asChild>
+        <Button variant="outline" size="sm">
+          {selectedPlatform?.name || 'Platforms'}
+        </Button>
+      </Menu.Trigger>
+      <Menu.Content>
         {platforms?.results.map((platform) => (
-          <MenuItem
+          <Menu.Item
             key={platform.id}
+            value={platform.id.toString()}
             onClick={() => setSelectedPlatformId(platform.id)}
           >
             {platform.name}
-          </MenuItem>
+          </Menu.Item>
         ))}
-      </MenuList>
-    </Menu>
+      </Menu.Content>
+    </Menu.Root>
   );
 };
 
