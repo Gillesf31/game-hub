@@ -5,7 +5,7 @@ import NavBar from '../components/NavBar';
 const Layout = () => {
   return (
     <>
-      <GridItem area='nav'>
+      <GridItem area="nav">
         <NavBar />
       </GridItem>
       <Box padding={5}>
