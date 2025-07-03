@@ -9,7 +9,11 @@ import useGameDetail from '../hooks/useGameDetail';
 const GameDetailPage = () => {
   const { slug } = useParams();
 
-  const { data: game, isLoading, error } = useGameDetail(slug!);
+  if (!slug) {
+    throw new Error('Game slug is required');
+  }
+
+  const { data: game, isLoading, error } = useGameDetail(slug);
 
   if (isLoading) return <Spinner />;
 
@@ -25,8 +29,7 @@ const GameDetailPage = () => {
         <GameAttributes game={game} />
       </GridItem>
       <GridItem>
-        <p>{slug}</p>
-        <GameTrailer slug={slug!} />
+        <GameTrailer slug={slug} />
         <GameScreenshots gameId={game.id} />
       </GridItem>
     </SimpleGrid>
