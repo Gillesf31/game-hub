@@ -45,7 +45,9 @@ const GenreList = () => {
                   selectedGenreId === genre.id ? 'underline' : 'none'
                 }
               >
-                {genre.name}
+                {genre.name.length < 15
+                  ? genre.name
+                  : `${genre.name.substring(0, 15)}...`}
               </Button>
             </HStack>
           </List.Item>
