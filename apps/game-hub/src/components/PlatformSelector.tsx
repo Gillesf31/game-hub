@@ -13,23 +13,25 @@ const PlatformSelector = () => {
   if (error) return null;
 
   return (
-    <Menu.Root positioning={{ placement: 'right-start' }}>
+    <Menu.Root>
       <Menu.Trigger asChild>
         <Button variant="outline" size="sm">
           {selectedPlatform?.name || 'Platforms'}
         </Button>
       </Menu.Trigger>
-      <Menu.Content>
-        {platforms?.results.map((platform) => (
-          <Menu.Item
-            key={platform.id}
-            value={platform.id.toString()}
-            onClick={() => setSelectedPlatformId(platform.id)}
-          >
-            {platform.name}
-          </Menu.Item>
-        ))}
-      </Menu.Content>
+      <Menu.Positioner>
+        <Menu.Content>
+          {platforms?.results.map((platform) => (
+            <Menu.Item
+              key={platform.id}
+              value={platform.id.toString()}
+              onClick={() => setSelectedPlatformId(platform.id)}
+            >
+              {platform.name}
+            </Menu.Item>
+          ))}
+        </Menu.Content>
+      </Menu.Positioner>
     </Menu.Root>
   );
 };

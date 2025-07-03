@@ -20,17 +20,19 @@ const SortSelector = () => {
         {sortOrders.find((order) => order.value === sortOrder)?.label ||
           'Relevance'}
       </Menu.Trigger>
-      <Menu.Content>
-        {sortOrders.map((order) => (
-          <Menu.Item
-            value={order.value}
-            key={order.value}
-            onClick={() => setSelectedSortOrder(order.value)}
-          >
-            {order.label}
-          </Menu.Item>
-        ))}
-      </Menu.Content>
+      <Menu.Positioner>
+        <Menu.Content>
+          {sortOrders.map((order) => (
+            <Menu.Item
+              value={order.value}
+              key={order.value}
+              onClick={() => setSelectedSortOrder(order.value)}
+            >
+              {order.label}
+            </Menu.Item>
+          ))}
+        </Menu.Content>
+      </Menu.Positioner>
     </Menu.Root>
   );
 };
