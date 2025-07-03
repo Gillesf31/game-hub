@@ -19,10 +19,6 @@ const GameCard = ({ game }: GameCardProps) => {
       width={'250px'}
       borderRadius={10}
       overflow="hidden"
-      _hover={{
-        transform: 'scale(1.05)',
-        transition: 'transform 0.3s ease',
-      }}
       onClick={() => navigate(`/games/${game.slug}`)}
     >
       <Image src={getCroppedImageUrl(game.background_image, 600, 400)} />

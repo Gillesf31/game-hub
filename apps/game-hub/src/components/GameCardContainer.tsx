@@ -10,7 +10,14 @@ const GameCardContainer = ({
   borderRadius,
 }: GameCardContainerProps) => {
   return (
-    <Box borderRadius={borderRadius} overflow="hidden">
+    <Box
+      _hover={{
+        transform: 'scale(1.05)',
+        transition: 'transform 0.3s ease',
+      }}
+      borderRadius={borderRadius}
+      overflow="hidden"
+    >
       {children}
     </Box>
   );
