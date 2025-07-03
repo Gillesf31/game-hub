@@ -8,6 +8,7 @@ import useGameDetail from '../hooks/useGameDetail';
 
 const GameDetailPage = () => {
   const { slug } = useParams();
+
   const { data: game, isLoading, error } = useGameDetail(slug!);
 
   if (isLoading) return <Spinner />;
@@ -15,7 +16,7 @@ const GameDetailPage = () => {
   if (error || !game) throw error;
 
   return (
-    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5}>
+    <SimpleGrid columns={{ base: 1, md: 2 }} gap={5}>
       <GridItem>
         <Heading>{game.name}</Heading>
         <ExpandableText maxCharacter={300}>
@@ -24,6 +25,7 @@ const GameDetailPage = () => {
         <GameAttributes game={game} />
       </GridItem>
       <GridItem>
+        <p>{slug}</p>
         <GameTrailer slug={slug!} />
         <GameScreenshots gameId={game.id} />
       </GridItem>

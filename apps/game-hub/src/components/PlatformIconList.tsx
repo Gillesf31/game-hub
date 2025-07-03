@@ -10,7 +10,7 @@ import {
   FaXbox,
 } from 'react-icons/fa';
 import { MdPhone } from 'react-icons/md';
-import { SiNintendo } from 'react-icons/si';
+import { SiNintendo, SiSega } from 'react-icons/si';
 import { Platform } from '../entities/Platform';
 
 interface PlatformIconListProps {
@@ -28,13 +28,20 @@ const PlatformIconList = ({ platforms }: PlatformIconListProps) => {
     android: FaAndroid,
     ios: MdPhone,
     web: BsGlobe,
+    sega: SiSega,
   };
 
   return (
     <HStack marginY={1}>
-      {platforms.map((platform) => (
-        <Icon key={platform.id} as={iconMap[platform.slug]} color="grey.500" />
-      ))}
+      {platforms.map((platform) =>
+        iconMap[platform.slug] ? (
+          <Icon
+            key={platform.id}
+            as={iconMap[platform.slug]}
+            colorPalette="grey.500"
+          />
+        ) : null
+      )}
     </HStack>
   );
 };
