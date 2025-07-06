@@ -20,6 +20,9 @@
     "paths": {
       "@game-hub-monorepo/ui-components-critic-score-ui": [
         "libs/gamehub/ui-component/critic-score/ui/src/index.ts"
+      ],
+      "@game-hub-monorepo/ui-components-emoji-ui": [
+        "libs/gamehub/ui-component/emoji/ui/src/index.ts"
       ]
     }
   }

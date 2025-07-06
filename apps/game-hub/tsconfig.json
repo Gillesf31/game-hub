@@ -3,6 +3,9 @@
   "include": [],
   "references": [
     {
+      "path": "../../libs/gamehub/ui-component/emoji/ui"
+    },
+    {
       "path": "../../libs/gamehub/ui-component/critic-score/ui"
     },
     {

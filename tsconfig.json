@@ -11,6 +11,9 @@
     },
     {
       "path": "./libs/gamehub/ui-component/critic-score/ui"
+    },
+    {
+      "path": "./libs/gamehub/ui-component/emoji/ui"
     }
   ]
 }
