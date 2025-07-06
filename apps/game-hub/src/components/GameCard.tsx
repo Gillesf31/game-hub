@@ -1,8 +1,8 @@
 import { Card, CardBody, Heading, HStack, Image } from '@chakra-ui/react';
+import { CriticScore } from '@game-hub-monorepo/ui-components-critic-score-ui';
 import { useNavigate } from 'react-router-dom';
 import { Game } from '../entities/Game';
 import getCroppedImageUrl from '../services/image-url/image-url';
-import CriticScore from './CriticScore';
 import Emoji from './Emoji';
 import PlatformIconList from './PlatformIconList';
 

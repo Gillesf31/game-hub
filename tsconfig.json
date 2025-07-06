@@ -8,6 +8,9 @@
     },
     {
       "path": "./apps/game-hub"
+    },
+    {
+      "path": "./libs/gamehub/ui-component/critic-score/ui"
     }
   ]
 }

@@ -2,9 +2,6 @@
   "name": "@game-hub-monorepo/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {
-    "preinstall": "npx only-allow pnpm"
-  },
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "3.21.1",
@@ -22,15 +19,17 @@
     "zustand": "^5.0.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
     "@eslint/js": "^9.8.0",
-    "@nx/cypress": "21.2.1",
-    "@nx/eslint": "21.2.1",
-    "@nx/eslint-plugin": "21.2.1",
-    "@nx/js": "21.2.1",
-    "@nx/react": "21.2.1",
-    "@nx/vite": "21.2.1",
-    "@nx/web": "21.2.1",
-    "@nx/workspace": "21.2.1",
+    "@nx/cypress": "21.2.2",
+    "@nx/eslint": "21.2.2",
+    "@nx/eslint-plugin": "21.2.2",
+    "@nx/js": "21.2.2",
+    "@nx/react": "21.2.2",
+    "@nx/vite": "21.2.2",
+    "@nx/web": "21.2.2",
+    "@nx/workspace": "21.2.2",
     "@swc-node/register": "~1.9.1",
     "@swc/cli": "~0.6.0",
     "@swc/core": "~1.5.7",
@@ -53,7 +52,7 @@
     "eslint-plugin-react-hooks": "5.0.0",
     "jiti": "2.4.2",
     "jsdom": "~22.1.0",
-    "nx": "21.2.1",
+    "nx": "21.2.2",
     "prettier": "^2.6.2",
     "tslib": "^2.3.0",
     "typescript": "~5.8.2",
@@ -62,6 +61,7 @@
     "vitest": "^3.0.0"
   },
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "libs/gamehub/ui-component/critic-score/*"
   ]
 }
