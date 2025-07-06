@@ -21,8 +21,17 @@ export default [
           allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?[jt]s$'],
           depConstraints: [
             {
-              sourceTag: '*',
-              onlyDependOnLibsWithTags: ['*'],
+              sourceTag: 'scope:game-hub',
+              onlyDependOnLibsWithTags: ['scope:game-hub'],
+            },
+            {
+              sourceTag: 'type:app',
+              // TODO: Fix this when refacto is done, app should import feature not ui
+              onlyDependOnLibsWithTags: ['type:app', 'type:ui'],
+            },
+            {
+              sourceTag: 'type:ui',
+              onlyDependOnLibsWithTags: ['type:ui'],
             },
           ],
         },

@@ -13,19 +13,17 @@ const ExpandableText = ({
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <>
-      <Text>
-        {showMore ? children : children.slice(0, maxCharacter)}...{' '}
-        <Button
-          size='sm'
-          colorScheme='yellow'
-          fontWeight='bold'
-          onClick={() => setShowMore(!showMore)}
-        >
-          {showMore ? 'Show less' : 'Show more'}
-        </Button>
-      </Text>
-    </>
+    <Text>
+      {showMore ? children : children.slice(0, maxCharacter)}...{' '}
+      <Button
+        size="sm"
+        colorScheme="yellow"
+        fontWeight="bold"
+        onClick={() => setShowMore(!showMore)}
+      >
+        {showMore ? 'Show less' : 'Show more'}
+      </Button>
+    </Text>
   );
 };
 

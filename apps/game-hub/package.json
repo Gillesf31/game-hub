@@ -1,5 +1,11 @@
 {
   "name": "@game-hub-monorepo/game-hub",
   "version": "0.0.1",
-  "private": true
+  "private": true,
+  "nx": {
+    "tags": [
+      "scope:game-hub",
+      "type:app"
+    ]
+  }
 }
