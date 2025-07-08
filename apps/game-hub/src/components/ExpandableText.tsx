@@ -17,7 +17,7 @@ const ExpandableText = ({
       {showMore ? children : children.slice(0, maxCharacter)}...{' '}
       <Button
         size="sm"
-        colorScheme="yellow"
+        colorPalette="yellow"
         fontWeight="bold"
         onClick={() => setShowMore(!showMore)}
       >

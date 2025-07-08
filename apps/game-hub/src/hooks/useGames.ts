@@ -21,6 +21,7 @@ const useGames = () => {
           page: pageParam,
         },
       }),
+    initialPageParam: 1,
     getNextPageParam: (lastPage, allPages) => {
       return lastPage.next ? allPages.length + 1 : undefined;
     },

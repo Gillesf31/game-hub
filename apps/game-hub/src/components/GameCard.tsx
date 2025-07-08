@@ -6,7 +6,7 @@ import bullsEye from '../assets/bulls-eye.webp';
 import meh from '../assets/meh.webp';
 import thumbUp from '../assets/thumbs-up.webp';
 import { Game } from '../entities/Game';
-import getCroppedImageUrl from '../services/image-url/image-url';
+import { getCroppedImageUrl } from '../services/image-url/image-url';
 import PlatformIconList from './PlatformIconList';
 
 type GameCardProps = {

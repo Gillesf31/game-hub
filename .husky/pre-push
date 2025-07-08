@@ -1,0 +1,16 @@
+#!/bin/sh
+# .git/hooks/pre-push
+protected_branch='main'
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+remote_branch="origin/$protected_branch"
+
+# Get the base branch for comparison
+if git show-ref --verify --quiet refs/remotes/$remote_branch; then
+    base_branch=$remote_branch
+else
+    base_branch="HEAD~1"
+fi
+
+echo "Running affected checks against $base_branch..."
+
+npx nx affected --target=typecheck,lint,test,build --base="$base_branch" --parallel=3

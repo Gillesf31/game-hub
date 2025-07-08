@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import getCroppedImageUrl from './image-url';
+import { getCroppedImageUrl } from './image-url';
 
 describe('getCroppedImageUrl', () => {
   test('should return cropped image URL', () => {

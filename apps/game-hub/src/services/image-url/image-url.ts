@@ -1,6 +1,6 @@
 import noImagePlaceholder from '../../assets/no-image-placeholder.webp';
 
-const getCroppedImageUrl = (
+export const getCroppedImageUrl = (
   imageUrl: string,
   width: number,
   height: number
@@ -14,5 +14,3 @@ const getCroppedImageUrl = (
     imageUrl.slice(index)
   );
 };
-
-export default getCroppedImageUrl;

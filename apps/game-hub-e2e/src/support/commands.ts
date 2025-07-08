@@ -10,6 +10,8 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 
+// eslint-disable-next-line
+// @ts-ignore
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
   namespace Cypress {
@@ -21,9 +23,9 @@ declare global {
 }
 
 // -- This is a parent command --
-Cypress.Commands.add('login', (email, password) => {
-  console.log('Custom command example: Login', email, password);
-});
+// Cypress.Commands.add('login', (email, password) => {
+//   console.log('Custom command example: Login', email, password);
+// });
 //
 // -- This is a child command --
 // Cypress.Commands.add("drag", { prevSubject: 'element'}, (subject, options) => { ... })
