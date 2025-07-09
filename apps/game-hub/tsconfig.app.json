@@ -43,7 +43,6 @@
     "../../libs/gamehub/game/util/src/lib/Platform.ts",
     "../../libs/gamehub/game/util/src/lib/Publisher.ts",
     "../../libs/gamehub/game/util/src/lib/Screenshot.ts",
-    "../../libs/gamehub/ui-component/platform/icon/ui/src/lib/PlatformIconList.tsx"
   ],
   "references": [
     {

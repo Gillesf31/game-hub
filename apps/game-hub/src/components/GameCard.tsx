@@ -3,7 +3,7 @@ import { Game } from '@game-hub-monorepo/game-util';
 import { getCroppedImageUrl } from '@game-hub-monorepo/image-util';
 import { CriticScore } from '@game-hub-monorepo/ui-components-critic-score-ui';
 import { Emoji } from '@game-hub-monorepo/ui-components-emoji-ui';
-import { PlatformIconList } from '@game-hub-monorepo/ui-components-platform-icon-ui';
+import { PlatformIconList } from '@game-hub-monorepo/ui-components-platform-icon-list-ui';
 import { useNavigate } from 'react-router-dom';
 import bullsEye from '../assets/bulls-eye.webp';
 import meh from '../assets/meh.webp';

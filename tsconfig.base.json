@@ -14,6 +14,11 @@
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitAny": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
@@ -26,6 +31,9 @@
       ],
       "@game-hub-monorepo/ui-components-emoji-ui": [
         "libs/gamehub/ui-component/emoji/ui/src/index.ts"
+      ],
+      "@game-hub-monorepo/ui-components-platform-icon-list-ui": [
+        "libs/gamehub/ui-component/platform/icon-list/ui/src/index.ts"
       ]
     }
   }
