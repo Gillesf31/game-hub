@@ -6,8 +6,9 @@ import {
   List,
   Spinner,
 } from '@chakra-ui/react';
+import { getCroppedImageUrl } from '@game-hub-monorepo/image-util';
+import noImagePlaceholder from '../assets/no-image-placeholder.webp';
 import useGenres from '../hooks/useGenres';
-import { getCroppedImageUrl } from '../services/image-url/image-url';
 import useGameStore from '../store';
 
 const GenreList = () => {
@@ -29,7 +30,12 @@ const GenreList = () => {
           <List.Item key={genre.id} paddingY={1}>
             <HStack>
               <Image
-                src={getCroppedImageUrl(genre.image_background, 600, 400)}
+                src={getCroppedImageUrl(
+                  genre.image_background,
+                  noImagePlaceholder,
+                  600,
+                  400
+                )}
                 boxSize="32px"
                 borderRadius={8}
                 objectFit="cover"

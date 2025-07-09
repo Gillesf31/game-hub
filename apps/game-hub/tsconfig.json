@@ -6,6 +6,9 @@
       "path": "../../libs/gamehub/ui-component/emoji/ui"
     },
     {
+      "path": "../../libs/gamehub/image/util"
+    },
+    {
       "path": "../../libs/gamehub/ui-component/critic-score/ui"
     },
     {

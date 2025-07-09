@@ -17,6 +17,9 @@
     },
     {
       "path": "./libs/gamehub/game/util"
+    },
+    {
+      "path": "./libs/gamehub/image/util"
     }
   ]
 }

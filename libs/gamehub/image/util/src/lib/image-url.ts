@@ -1,11 +1,10 @@
-import noImagePlaceholder from '../../assets/no-image-placeholder.webp';
-
 export const getCroppedImageUrl = (
   imageUrl: string,
+  fallBackImage: string,
   width: number,
   height: number
 ) => {
-  if (!imageUrl) return noImagePlaceholder;
+  if (!imageUrl) return fallBackImage;
   const target = 'media/';
   const index = imageUrl.indexOf(target) + target.length;
   return (

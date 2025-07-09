@@ -36,7 +36,7 @@ export default [
             {
               sourceTag: 'type:util',
               onlyDependOnLibsWithTags: ['type:util'],
-            }
+            },
           ],
         },
       ],

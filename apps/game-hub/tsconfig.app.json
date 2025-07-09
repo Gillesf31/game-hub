@@ -49,6 +49,9 @@
       "path": "../../libs/gamehub/ui-component/emoji/ui/tsconfig.lib.json"
     },
     {
+      "path": "../../libs/gamehub/image/util/tsconfig.lib.json"
+    },
+    {
       "path": "../../libs/gamehub/ui-component/critic-score/ui/tsconfig.lib.json"
     },
     {

@@ -20,6 +20,7 @@
     "customConditions": ["development"],
     "paths": {
       "@game-hub-monorepo/game-util": ["libs/gamehub/game/util/src/index.ts"],
+      "@game-hub-monorepo/image-util": ["libs/gamehub/image/util/src/index.ts"],
       "@game-hub-monorepo/ui-components-critic-score-ui": [
         "libs/gamehub/ui-component/critic-score/ui/src/index.ts"
       ],
