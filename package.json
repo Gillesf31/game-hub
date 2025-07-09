@@ -67,7 +67,9 @@
     "libs/gamehub/ui-component/critic-score/*",
     "libs/gamehub/ui-component/emoji/*",
     "libs/gamehub/game/*",
-    "libs/gamehub/image/*"
+    "libs/gamehub/image/*",
+    "libs/gamehub/ui-component/platform/icon/*",
+    "libs/gamehub/ui-component/platform/icon-list/*"
   ],
   "scripts": {
     "prepare": "husky"

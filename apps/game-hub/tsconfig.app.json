@@ -42,7 +42,8 @@
     "../../libs/gamehub/game/util/src/lib/Genre.ts",
     "../../libs/gamehub/game/util/src/lib/Platform.ts",
     "../../libs/gamehub/game/util/src/lib/Publisher.ts",
-    "../../libs/gamehub/game/util/src/lib/Screenshot.ts"
+    "../../libs/gamehub/game/util/src/lib/Screenshot.ts",
+    "../../libs/gamehub/ui-component/platform/icon/ui/src/lib/PlatformIconList.tsx"
   ],
   "references": [
     {
@@ -50,6 +51,9 @@
     },
     {
       "path": "../../libs/gamehub/image/util/tsconfig.lib.json"
+    },
+    {
+      "path": "../../libs/gamehub/ui-component/platform/icon-list/ui/tsconfig.lib.json"
     },
     {
       "path": "../../libs/gamehub/ui-component/critic-score/ui/tsconfig.lib.json"

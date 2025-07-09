@@ -1,8 +1,8 @@
 import { SimpleGrid, Text } from '@chakra-ui/react';
 import { Game } from '@game-hub-monorepo/game-util';
 import { CriticScore } from '@game-hub-monorepo/ui-components-critic-score-ui';
+import { PlatformIconList } from '@game-hub-monorepo/ui-components-platform-icon-ui';
 import DefinitionItem from './DefinitionItem';
-import PlatformIconList from './PlatformIconList';
 
 type GameAttributesProps = {
   game: Game;

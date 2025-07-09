@@ -9,6 +9,9 @@
       "path": "../../libs/gamehub/image/util"
     },
     {
+      "path": "../../libs/gamehub/ui-component/platform/icon-list/ui"
+    },
+    {
       "path": "../../libs/gamehub/ui-component/critic-score/ui"
     },
     {

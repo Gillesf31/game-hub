@@ -20,6 +20,9 @@
     },
     {
       "path": "./libs/gamehub/image/util"
+    },
+    {
+      "path": "./libs/gamehub/ui-component/platform/icon-list/ui"
     }
   ]
 }
