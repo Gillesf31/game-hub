@@ -1,5 +1,5 @@
+import { GameTrailer } from '@game-hub-monorepo/game-util';
 import { useQuery } from '@tanstack/react-query';
-import { GameTrailer } from '../entities/GameTrailer';
 import APIClient, { FetchResponse } from '../services/api-client';
 
 const apiClient = new APIClient<GameTrailer>('/games');

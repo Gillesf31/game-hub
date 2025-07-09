@@ -36,13 +36,23 @@
     "src/**/*.js",
     "src/**/*.jsx",
     "src/**/*.ts",
-    "src/**/*.tsx"],
+    "src/**/*.tsx",
+    "../../libs/gamehub/game/util/src/lib/Game.ts",
+    "../../libs/gamehub/game/util/src/lib/GameTrailer.ts",
+    "../../libs/gamehub/game/util/src/lib/Genre.ts",
+    "../../libs/gamehub/game/util/src/lib/Platform.ts",
+    "../../libs/gamehub/game/util/src/lib/Publisher.ts",
+    "../../libs/gamehub/game/util/src/lib/Screenshot.ts"
+  ],
   "references": [
     {
       "path": "../../libs/gamehub/ui-component/emoji/ui/tsconfig.lib.json"
     },
     {
       "path": "../../libs/gamehub/ui-component/critic-score/ui/tsconfig.lib.json"
+    },
+    {
+      "path": "../../libs/gamehub/game/util/tsconfig.lib.json"
     }
   ]
 }

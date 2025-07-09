@@ -1,6 +1,6 @@
 import { SimpleGrid, Text } from '@chakra-ui/react';
+import { Game } from '@game-hub-monorepo/game-util';
 import { CriticScore } from '@game-hub-monorepo/ui-components-critic-score-ui';
-import { Game } from '../entities/Game';
 import DefinitionItem from './DefinitionItem';
 import PlatformIconList from './PlatformIconList';
 

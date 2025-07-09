@@ -65,7 +65,8 @@
   "workspaces": [
     "apps/*",
     "libs/gamehub/ui-component/critic-score/*",
-    "libs/gamehub/ui-component/emoji/*"
+    "libs/gamehub/ui-component/emoji/*",
+    "libs/gamehub/game/*"
   ],
   "scripts": {
     "prepare": "husky"

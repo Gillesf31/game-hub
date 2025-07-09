@@ -27,12 +27,16 @@ export default [
             {
               sourceTag: 'type:app',
               // TODO: Fix this when refacto is done, app should import feature not ui
-              onlyDependOnLibsWithTags: ['type:app', 'type:ui'],
+              onlyDependOnLibsWithTags: ['type:app', 'type:ui', 'type:util'],
             },
             {
               sourceTag: 'type:ui',
-              onlyDependOnLibsWithTags: ['type:ui'],
+              onlyDependOnLibsWithTags: ['type:ui', 'type:util'],
             },
+            {
+              sourceTag: 'type:util',
+              onlyDependOnLibsWithTags: ['type:util'],
+            }
           ],
         },
       ],

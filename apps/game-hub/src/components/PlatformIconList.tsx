@@ -1,4 +1,5 @@
 import { HStack, Icon } from '@chakra-ui/react';
+import { Platform } from '@game-hub-monorepo/game-util';
 import { IconType } from 'react-icons';
 import { BsGlobe } from 'react-icons/bs';
 import {
@@ -11,7 +12,6 @@ import {
 } from 'react-icons/fa';
 import { MdPhone } from 'react-icons/md';
 import { SiNintendo, SiSega } from 'react-icons/si';
-import { Platform } from '../entities/Platform';
 
 interface PlatformIconListProps {
   platforms: Platform[];

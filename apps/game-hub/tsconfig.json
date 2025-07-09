@@ -9,6 +9,9 @@
       "path": "../../libs/gamehub/ui-component/critic-score/ui"
     },
     {
+      "path": "../../libs/gamehub/game/util"
+    },
+    {
       "path": "./tsconfig.app.json"
     },
     {

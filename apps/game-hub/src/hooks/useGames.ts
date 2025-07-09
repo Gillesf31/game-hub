@@ -1,6 +1,6 @@
+import { Game } from '@game-hub-monorepo/game-util';
 import { useInfiniteQuery } from '@tanstack/react-query';
 import ms from 'ms';
-import { Game } from '../entities/Game';
 import APIClient, { FetchResponse } from '../services/api-client';
 import useGameStore from '../store';
 
